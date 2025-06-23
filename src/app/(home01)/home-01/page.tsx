@@ -1,10 +1,13 @@
+import HeroSectionHomeOne from '@/components/home-01/hero-section'
+import SpecialSection from '@/components/home-01/special-section'
 import React from 'react'
 
 const HomePage01 = () => {
   return (
-    <div>
-      Home Page 01
-    </div>
+    <main>
+      <HeroSectionHomeOne />
+      <SpecialSection />
+    </main>
   )
 }
 
