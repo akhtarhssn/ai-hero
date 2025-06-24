@@ -184,3 +184,9 @@
   filter: blur(200px);
   transform: matrix(0.08, -1, -1, -0.08, 0, 0);
 }
+
+.text-outline {
+  -webkit-text-stroke: 1px #4f46e5;
+  /* Indigo-600 */
+  color: transparent;
+}

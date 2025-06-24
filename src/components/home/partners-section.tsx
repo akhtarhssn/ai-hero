@@ -3,11 +3,12 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
 import Image from "next/image"
 
-const PartnersSection = () => {
+const PartnersSection = ({ className }: { className?: string }) => {
     return (
-        <section className='mt-[150px]'>
+        <section className={cn('mt-[150px]', className)}>
             <div className="lg:grid grid-cols-12">
                 <div className="relative col-span-3 h-full">
                     <div className="hidden lg:block h-full">

@@ -8,14 +8,19 @@ const HeroSectionHomeOne = () => {
     return (
         <section className='p-3 md:p-5 pb-[4%]'>
             <div
-                className='w-full h-full pt-[30%] xl:pt-[13%] rounded-3xl relative p-5'
+                className='w-full h-full pt-[30%] xl:pt-[13%] rounded-3xl relative p-5 -z-10'
                 style={{
-                    backgroundImage: 'url(/assets/images/home-01-hero-bg.png)',
+                    backgroundImage: 'url(/assets/images/slider-bg-2.jpg)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
                 }}
             >
+
+                {/* bg */}
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8258C8] to-[#2C84C8] -z-10 opacity-60 rounded-3xl" />
+
+
                 <MaxWidthContainer className=''>
                     <div className="max-w-[650px] md:max-w-[800px] lg:max-w-[980px] text-white pr-14 lg:pr-0">
                         <h1 className='font-sora text-[32px] sm:text-5xl md:text-6xl lg:text-[80px] xl:leading-[90px] -tracking-[2.45px]'>Transforming business with next-generation AI solutions and innovation</h1>

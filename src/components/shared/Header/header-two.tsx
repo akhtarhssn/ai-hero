@@ -24,14 +24,14 @@ const HeaderTwo = ({ className }: { className?: string }) => {
                     <div className='flex items-center gap-2 text-black bg-white rounded-br-[25px] relative py-3'>
                         {/* inverted top corner */}
                         <div
-                            className='absolute top-2 -right-7 rotate-180 size-7 bg-transparent rounded-br-3xl z-10'
+                            className='absolute top-0 md:top-2 -right-7 rotate-180 size-7 bg-transparent rounded-br-3xl z-10'
                             style={{
                                 boxShadow: '0.5rem 0.5rem #ffffff'
                             }}
                         />
                         {/* inverted bottom corner */}
                         <div
-                            className='absolute -bottom-7 left-0 rotate-180 size-7 bg-[#A28EC6] rounded-br-3xl z-10'
+                            className='absolute -bottom-7 left-0 rotate-180 size-7 bg-transparent rounded-br-3xl z-10'
                             style={{
                                 boxShadow: '0.5rem 0.5rem #ffffff'
                             }}
