@@ -5,6 +5,7 @@ import MarqueeSection from "@/components/home/marquee";
 import PartnersSection from "@/components/home/partners-section";
 import ServicesSection from "@/components/home/services-section";
 import AboutSection from "@/components/home/about-section";
+import AchievementSection from "@/components/home/achievements";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <MarqueeSection text="/ Neural Networks in shaping the future of technology. / Neural Networks in shaping the future of technology. " />
       <FeatureSection />
       <AboutSection />
+      <AchievementSection />
       {/* Add more sections as needed */}
     </main>
   );

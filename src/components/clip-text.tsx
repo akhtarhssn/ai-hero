@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ClipText = ({ text, from, to }: { text: string, from?: string, to?: string }) => {
+const ClipText = ({ text, from, to, className }: { text: string, from?: string, to?: string, className?: string }) => {
     return (
-        <span className="inline-block relative text-[#1F1F1F]"
+        <span className={`inline-block relative ${className ? className : "text-[#1F1F1F]"}`}
             style={{
                 WebkitTextStroke: '1px #ffffff00',
                 WebkitTextStrokeWidth: '2px'

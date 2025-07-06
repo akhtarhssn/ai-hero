@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Sora } from "next/font/google";
-import "./globals.css";
+import { Manrope, Sora } from "next/font/google";
 import { vamosFont } from "./font";
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+})
 
 const sora = Sora({
   variable: "--font-sora",
@@ -31,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} ${vamosFont.variable} antialiased`}
+        className={`${manrope.variable} ${sora.variable} ${vamosFont} antialiased`}
       >
         {children}
       </body>
